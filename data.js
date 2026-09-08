@@ -30,7 +30,7 @@ const ZEGSWIJZEN = [
   {
     tekst: "De plaat poetsen",
     betekenis: "Er stiekem vandoor gaan.",
-    oorsprong: "Vermoedelijk uit het Bargoens (dieventaal), waar 'plaat' de voetzool aanduidde en 'poetsen' snel wegglippen betekende."
+    oorsprong: "Verwijst naar het poetsen van de borstplaat (het harnas): een lafhartige soldaat die het gevecht wilde ontwijken, deed dat onder het voorwendsel dat hij zijn plaat moest gaan poetsen."
   },
   {
     tekst: "Iemand op zijn nummer zetten",
@@ -55,7 +55,7 @@ const ZEGSWIJZEN = [
   {
     tekst: "Iemand de kastanjes uit het vuur laten halen",
     betekenis: "Iemand het gevaarlijke werk laten doen terwijl een ander profiteert.",
-    oorsprong: "Gebaseerd op de fabel van de aap die de kat gebruikt om kastanjes uit het vuur te halen, waarna de aap zelf de buit opeet."
+    oorsprong: "De bekendste verklaring verwijst naar de fabel van de aap die de kat gebruikt om kastanjes uit het vuur te halen, waarna de aap zelf de buit opeet. Taalkundige A. de Cock (1908) wijst daarnaast op een oudere Nederlandse route via 'het spits afbijten' (het scherpe, gevaarlijke uiteinde wegnemen): wie een ander 'het spits laat afbijten', laat die het gevaar lopen."
   },
   {
     tekst: "Het achterste van zijn tong laten zien",
@@ -285,7 +285,7 @@ const ZEGSWIJZEN = [
   {
     tekst: "Iemand naar de kroon steken",
     betekenis: "Iemand proberen te overtreffen.",
-    oorsprong: "Verwijst naar het letterlijk reiken naar de kroon van een koning, als teken van rivaliteit om de hoogste positie."
+    oorsprong: "Volgens A. de Cock (1908) gaat het hier niet om een koningskroon, maar om een erekrans of overwinningsteken zoals dat bij wedstrijden werd uitgereikt aan wie de anderen overtrof — die krans probeerde men de winnaar afhandig te maken door hem op zijn beurt te overtreffen."
   },
   {
     tekst: "Het onderspit delven",
@@ -460,7 +460,7 @@ const ZEGSWIJZEN = [
   {
     tekst: "Iemand de duimschroeven aandraaien",
     betekenis: "Iemand onder zware druk zetten.",
-    oorsprong: "Verwijst naar een historisch martelwerktuig waarmee de duimen werden samengeknepen om een bekentenis af te dwingen."
+    oorsprong: "Verwijst naar de duimschroef, een martelwerktuig dat verdachten letterlijk aan de duim werd aangelegd om een bekentenis af te dwingen — een praktijk die A. de Cock (1908) documenteert als onderdeel van de middeleeuwse pijnbank."
   },
   {
     tekst: "Op eieren lopen",
@@ -475,7 +475,7 @@ const ZEGSWIJZEN = [
   {
     tekst: "Iemand een blauwtje laten lopen",
     betekenis: "Iemands liefde of avances afwijzen.",
-    oorsprong: "Mogelijk gerelateerd aan de kleur blauw als symbool voor teleurstelling of afwijzing in oude kledingsymboliek."
+    oorsprong: "Gaat volgens A. de Cock (1908) terug op een oud gebruik waarbij een afgewezen minnaar symbolisch een blauwe huik (mantel) omgehangen kreeg als openbaar teken van afwijzing — de uitdrukking is al te vinden in een rederijkersbundel uit 1521."
   },
   {
     tekst: "Ergens geen gras over laten groeien",
@@ -491,5 +491,170 @@ const ZEGSWIJZEN = [
     tekst: "Zo goed als goud zijn",
     betekenis: "Heel betrouwbaar of waardevol zijn.",
     oorsprong: "Goud gold van oudsher als de meest stabiele en betrouwbare waardemaat, vandaar de vergelijking voor betrouwbaarheid."
+  },
+  {
+    tekst: "Iemand uit het veld slaan",
+    betekenis: "Iemand van zijn stuk brengen, van zijn zekerheid beroven.",
+    oorsprong: "Verwijst naar de middeleeuwse tornooien, waarbij een ridder die van zijn paard of uit het strijdperk (het veld) werd gedreven, verslagen was."
+  },
+  {
+    tekst: "In het krijt treden",
+    betekenis: "Deelnemen aan een strijd, wedstrijd of discussie.",
+    oorsprong: "Het 'krijt' was de afgebakende cirkel of arena waarin middeleeuwse steekspelen plaatsvonden — wie 'in het krijt trad', begon de kamp."
+  },
+  {
+    tekst: "Iemand paal en perk stellen",
+    betekenis: "Grenzen opleggen aan iemands gedrag of aan een misstand.",
+    oorsprong: "Verwijst naar de palen en omheiningen waarmee het middeleeuwse strijdperk, het toernooiveld, werd afgebakend."
+  },
+  {
+    tekst: "Iemand in de steek laten",
+    betekenis: "Iemand aan zijn lot overlaten in een moeilijke situatie.",
+    oorsprong: "Gaat vermoedelijk terug op het steekspel: wie zijn medestrijder tijdens een lanssteek niet te hulp kwam, liet hem letterlijk 'in de steek'."
+  },
+  {
+    tekst: "Voet bij stuk houden",
+    betekenis: "Standvastig blijven, niet toegeven.",
+    oorsprong: "Verwijst naar middeleeuwse kampvechters die bij een tweegevecht voet tegen voet zetten en niet terugweken uit het afgebakende strijdperk."
+  },
+  {
+    tekst: "Een lans breken voor iemand",
+    betekenis: "Het opnemen voor iemand, hem verdedigen.",
+    oorsprong: "Letterlijk: voor iemand een ridderlijk duel aangaan met de speer (lans), zoals bij toernooien gebeurde ter verdediging van bijvoorbeeld een edelvrouw."
+  },
+  {
+    tekst: "Veel ophef maken van iets",
+    betekenis: "Overdreven drukte of aandacht ergens aan besteden.",
+    oorsprong: "Verwijst naar het plechtig opheffen van de wapens vlak voor een middeleeuws tweegevecht."
+  },
+  {
+    tekst: "Het voor iemand opnemen",
+    betekenis: "Iemands partij kiezen, hem verdedigen.",
+    oorsprong: "Letterlijk 'het wapen voor iemand opnemen' — diens kant kiezen in een gevecht."
+  },
+  {
+    tekst: "Het spits afbijten",
+    betekenis: "Als eerste het moeilijkste of gevaarlijkste deel van een taak op je nemen.",
+    oorsprong: "Uit de middeleeuwse krijgskunst: soldaten die als eersten op de vijandelijke speerpunten ('het spits') afstormden, braken de aanval en maakten het minder gevaarlijk voor wie volgde."
+  },
+  {
+    tekst: "Met open vizier strijden",
+    betekenis: "Eerlijk en openlijk een conflict aangaan, zonder verborgen agenda.",
+    oorsprong: "Bij toernooien vochten ridders met gesloten vizier; de regels verboden zelfs om het tijdens het gevecht te openen — 'met open vizier' strijden stond voor eerlijke, onverholen strijd."
+  },
+  {
+    tekst: "Iemand tegen zich in het harnas jagen",
+    betekenis: "Iemand kwaad maken, tot verzet aanzetten.",
+    oorsprong: "Verwijst naar het aantrekken van het harnas, de wapenrusting, als voorbereiding op een gevecht."
+  },
+  {
+    tekst: "Iemand uit het zadel lichten",
+    betekenis: "Iemand van zijn positie of macht verdringen.",
+    oorsprong: "Uit de ridderlijke tweegevechten, waarbij het erom ging de tegenstander met de lans van zijn paard te werpen."
+  },
+  {
+    tekst: "Iemand weer in het zadel helpen",
+    betekenis: "Iemands verwarde zaken weer op orde brengen.",
+    oorsprong: "Letterlijk iemand die van zijn paard is gevallen er weer op helpen — later overdrachtelijk voor het herstellen van iemands positie."
+  },
+  {
+    tekst: "Tot de tanden gewapend zijn",
+    betekenis: "Volledig uitgerust of voorbereid zijn.",
+    oorsprong: "Herinnering aan de middeleeuwse ridders, die van hoofd tot voet in een ijzeren wapenrusting gehuld waren."
+  },
+  {
+    tekst: "Gelaarsd en gespoord",
+    betekenis: "Helemaal klaar en gereed om te vertrekken.",
+    oorsprong: "Verwijst naar de ridder die met laarzen en sporen aan volledig gereed stond om zijn strijdros te bestijgen."
+  },
+  {
+    tekst: "Zijn sporen verdienen",
+    betekenis: "Door prestaties bewijzen dat je iets waard bent.",
+    oorsprong: "De gouden sporen waren een kenmerk van de ridderstand; men kon ze verdienen bij de ridderslag, maar ook door een heldendaad op het slagveld."
+  },
+  {
+    tekst: "Iemand de handschoen toewerpen",
+    betekenis: "Iemand uitdagen tot een strijd of wedstrijd.",
+    oorsprong: "Een ridder die zijn handschoen voor de voeten van een ander wierp, daagde hem daarmee uit tot een tweegevecht; het oprapen van de handschoen betekende het aanvaarden van de uitdaging."
+  },
+  {
+    tekst: "Iets in zijn schild voeren",
+    betekenis: "Een vaak verborgen plan of bedoeling hebben.",
+    oorsprong: "Ridders droegen op hun wapenschild een blazoen, een zinnebeeldige voorstelling die als herkenningsteken diende — wat iemand 'in zijn schild voerde' gaf een aanwijzing over zijn ware bedoelingen."
+  },
+  {
+    tekst: "Iemand op het schild verheffen",
+    betekenis: "Iemand tot leider uitroepen of eervol in het zonnetje zetten.",
+    oorsprong: "Oud-Germaans gebruik waarbij een nieuwe leider op een schild werd geplaatst en door het verzamelde volk driemaal rondgedragen."
+  },
+  {
+    tekst: "Voor iemand in de bres springen",
+    betekenis: "Iemand te hulp komen, hem verdedigen.",
+    oorsprong: "Een 'bres' was een opening die aanvallers in een vestingmuur hadden geslagen; wie 'in de bres sprong', stelde zich op die gevaarlijke, opengeslagen plek om de verdediging over te nemen."
+  },
+  {
+    tekst: "Lont ruiken",
+    betekenis: "Onraad vermoeden, gevaar aanvoelen.",
+    oorsprong: "Voor het bestaan van vuursteen of lucifers stak men het buskruit van geweren en kanonnen aan met een brandende lont; de scherpe geur ervan verspreidde zich al voor het schot viel, en waarschuwde zo voor het dreigende gevaar."
+  },
+  {
+    tekst: "Door de bank genomen",
+    betekenis: "Gemiddeld, over het geheel genomen.",
+    oorsprong: "Vermoedelijk afkomstig van de vlees- of visbank, waarbij de kwaliteit van alle uitgestalde waren 'door elkaar', dus gemiddeld, werd bekeken."
+  },
+  {
+    tekst: "Iets op zijn duimpje kennen",
+    betekenis: "Iets perfect beheersen of uit het hoofd kennen.",
+    oorsprong: "Gaat terug op de tijd dat officiële stukken met een wassen zegel werden bekrachtigd, waarbij het tegenzegel soms met de duim werd vastgedrukt — vandaar 'op zijn duimpje' voor iets dat tot in de puntjes bekend is."
+  },
+  {
+    tekst: "Kiezen of delen",
+    betekenis: "Een keuze moeten maken, er is geen ontkomen aan.",
+    oorsprong: "In het oude Hollandse recht bepaalde men bij een gezamenlijk bezit — een erfenis, een buit — dat de ene partij de verdeling maakte, terwijl de andere partij mocht kiezen welk deel ze kreeg."
+  },
+  {
+    tekst: "De staf breken over iemand",
+    betekenis: "Iemand hard en definitief veroordelen.",
+    oorsprong: "Rechters braken vroeger letterlijk een houten staf in drieën boven een ter dood veroordeelde en wierpen hem de stukken voor de voeten, als teken dat het vonnis onherroepelijk was."
+  },
+  {
+    tekst: "Te hooi en te gras",
+    betekenis: "Onregelmatig, af en toe maar.",
+    oorsprong: "Oorspronkelijk een middeleeuwse tijdsaanduiding voor rechtsdagen, die tweemaal per jaar plaatsvonden: in de hooitijd en in het voorjaar, als het jonge gras opkwam."
+  },
+  {
+    tekst: "Jaar en dag",
+    betekenis: "Een lange, onbepaalde tijd.",
+    oorsprong: "Oorspronkelijk een juridische verjaringstermijn — doorgaans een jaar, zes weken en drie dagen — waarna een bezit niet meer betwist kon worden."
+  },
+  {
+    tekst: "Iets op het tapijt brengen",
+    betekenis: "Een onderwerp ter sprake brengen.",
+    oorsprong: "Verwijst naar het tapijt dat over de vergadertafel van hooggeplaatste bestuurders lag — een zaak die 'op het tapijt' kwam, werd letterlijk op die tafel besproken."
+  },
+  {
+    tekst: "Vogelvrij verklaard worden",
+    betekenis: "Buiten de bescherming van de wet gesteld worden, aan ieders genade overgeleverd.",
+    oorsprong: "Wie tot vogelvrij verklaard werd, mocht ongestraft gedood worden — vergelijkbaar met de vrijheid om vogels zonder eigenaar te bejagen."
+  },
+  {
+    tekst: "Iemand op de pijnbank leggen",
+    betekenis: "Iemand hevig kwellen, in grote onzekerheid of spanning laten zitten.",
+    oorsprong: "Verwijst naar de letterlijke folterbank, waarop verdachten werden uitgerekt om een bekentenis af te dwingen."
+  },
+  {
+    tekst: "Iemand aan de kaak stellen",
+    betekenis: "Iemands wangedrag openlijk bekendmaken en veroordelen.",
+    oorsprong: "De 'kaak' was een verhoging of schandpaal waarop veroordeelden met een ijzeren halsband werden vastgezet om publiekelijk te schande te staan."
+  },
+  {
+    tekst: "De genadeslag geven",
+    betekenis: "Iets of iemand definitief tot een einde brengen.",
+    oorsprong: "Verwijst naar de laatste, dodelijke slag die een beul aan een gefolterde gaf om diens lijden te beëindigen."
+  },
+  {
+    tekst: "De kogel is door de kerk",
+    betekenis: "Er is eindelijk een knoop doorgehakt.",
+    oorsprong: "Kerken en hun bezittingen werden bij middeleeuwse oorlogen en plunderingen doorgaans lang ontzien; pas als er niets anders meer overeind stond, kwamen zelfs zij aan de beurt — vandaar dat 'de kogel door de kerk' is als er echt niets meer aan te doen valt."
   },
 ];
