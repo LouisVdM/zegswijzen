@@ -70,7 +70,39 @@
     </nav>
 
     <button class="all-link" id="openList">Alle zegswijzen bekijken</button>
+    <button class="all-link" id="openAdd">Zelf een zegswijze toevoegen</button>
   </main>
+
+  <!-- TOEVOEGEN -->
+  <section class="add-view" id="addView" hidden>
+    <header class="list-header">
+      <button class="back-btn" id="closeAdd" aria-label="Terug">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 4L7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <h1>Zelf toevoegen</h1>
+    </header>
+
+    <form class="add-form" id="addForm">
+      <label for="inpTekst">Zegswijze</label>
+      <input type="text" id="inpTekst" placeholder="Bijv. Met de deur in huis vallen" required>
+
+      <label for="inpBetekenis">Wat het betekent</label>
+      <textarea id="inpBetekenis" rows="2" placeholder="Korte uitleg van de betekenis" required></textarea>
+
+      <label for="inpOorsprong">Waar het vandaan komt</label>
+      <textarea id="inpOorsprong" rows="3" placeholder="De oorsprong of herkomst" required></textarea>
+
+      <button type="submit" class="submit-btn">Toevoegen</button>
+    </form>
+
+    <p class="add-note">Toegevoegde zegswijzen verschijnen voortaan mee in jouw rotatie en in de lijst, op dit toestel. Om ze permanent voor iedereen toe te voegen: kopieer de code en plak die in <code>data.js</code>.</p>
+
+    <div class="custom-section" id="customSection" hidden>
+      <h2>Jouw toevoegingen</h2>
+      <ul class="custom-list" id="customList"></ul>
+      <button class="copy-btn" id="copyCodeBtn">Kopieer alles als code voor data.js</button>
+    </div>
+  </section>
 
   <!-- LIJSTWEERGAVE -->
   <section class="list-view" id="listView" hidden>
