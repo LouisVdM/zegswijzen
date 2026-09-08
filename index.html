@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Zegswijze van de dag</title>
+<meta name="theme-color" content="#2E4A3D">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="scene">
+
+  <!-- DAGWEERGAVE -->
+  <main class="page-view" id="pageView">
+    <div class="calendar-page" id="calendarPage">
+      <div class="ring-holes">
+        <span class="hole"></span>
+        <span class="hole"></span>
+      </div>
+
+      <div class="date-block">
+        <span class="weekday" id="weekday">maandag</span>
+        <span class="daynum" id="daynum">1</span>
+        <span class="month" id="month">januari</span>
+      </div>
+
+      <div class="perforation" aria-hidden="true"></div>
+
+      <div class="saying-block">
+        <p class="saying" id="sayingText">—</p>
+      </div>
+
+      <div class="detail-block">
+        <div class="detail">
+          <span class="detail-rule betekenis-rule"></span>
+          <div class="detail-copy">
+            <h2>Wat het betekent</h2>
+            <p id="betekenisText">—</p>
+          </div>
+        </div>
+        <div class="detail">
+          <span class="detail-rule oorsprong-rule"></span>
+          <div class="detail-copy">
+            <h2>Waar het vandaan komt</h2>
+            <p id="oorsprongText">—</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <nav class="controls">
+      <button class="nav-btn" id="prevBtn" aria-label="Vorige dag">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 4L7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="nav-btn today-btn" id="todayBtn">Vandaag</button>
+      <button class="nav-btn" id="shuffleBtn" aria-label="Verrassing">
+        <svg viewBox="0 0 24 24" width="18" height="18"><path d="M4 4l16 16M20 4L4 20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="0"/></svg>
+        <span class="visually-hidden">Verrassing</span>
+      </button>
+      <button class="nav-btn" id="nextBtn" aria-label="Volgende dag">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M9 4l8 8-8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </nav>
+
+    <button class="all-link" id="openList">Alle zegswijzen bekijken</button>
+  </main>
+
+  <!-- LIJSTWEERGAVE -->
+  <section class="list-view" id="listView" hidden>
+    <header class="list-header">
+      <button class="back-btn" id="closeList" aria-label="Terug">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 4L7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <h1>Alle zegswijzen</h1>
+    </header>
+    <input type="search" id="searchBox" class="search-box" placeholder="Zoek een zegswijze…">
+    <ul class="saying-list" id="sayingList"></ul>
+  </section>
+
+</div>
+
+<footer class="app-footer">
+  Oorsprongsverklaringen zijn de meest gangbare uitleg in omloop — bij veel zegswijzen bestaat discussie over de exacte herkomst.
+</footer>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
