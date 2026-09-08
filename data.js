@@ -3,163 +3,493 @@
 // bij veel zegswijzen bestaat discussie of onzekerheid over de echte herkomst.
 const ZEGSWIJZEN = [
   {
-    tekst: "De kat uit de boom kijken",
-    betekenis: "Rustig afwachten hoe een situatie zich ontwikkelt voor je iets onderneemt.",
-    oorsprong: "Verwijst naar de jacht met honden: als een hond een kat de boom in jaagt, wacht hij geduldig af tot het dier weer naar beneden komt, in plaats van meteen te reageren."
+    tekst: "Iemand een rad voor ogen draaien",
+    betekenis: "Iemand misleiden, de werkelijkheid verhullen.",
+    oorsprong: "Verwijst naar een wiel dat zo snel ronddraait dat je de spaken niet meer onderscheidt — het zicht wordt erdoor vertroebeld."
   },
   {
-    tekst: "Een appeltje met iemand te schillen hebben",
-    betekenis: "Nog een onopgeloste kwestie of ruzie met iemand hebben.",
-    oorsprong: "Vermoedelijk afgeleid van het gebruik om bij een geschil samen rustig een appel te schillen terwijl de zaak besproken werd, ver voor er sprake was van feitelijk 'ruzie maken'."
+    tekst: "De draak steken met iets",
+    betekenis: "Iets belachelijk maken, ermee spotten.",
+    oorsprong: "Middeleeuwse volksfeesten kenden een namaakdraak die bespot en symbolisch verslagen werd, als overwinning op het kwaad."
   },
   {
-    tekst: "Boter bij de vis doen",
-    betekenis: "Direct betalen, zonder uitstel.",
-    oorsprong: "Op de vismarkt bedierf vis snel, dus moest de koper meteen afrekenen. Boter was destijds een waardevast betaalmiddel dat vaak als directe tegenprestatie diende."
+    tekst: "Iets door de vingers zien",
+    betekenis: "Een fout vergeven, er niet te streng op reageren.",
+    oorsprong: "Beeld van iemand die zijn hand voor de ogen houdt maar tussen de vingers door toch stiekem kijkt, alsof hij niet goed oplet."
   },
   {
-    tekst: "De pot verwijt de ketel dat hij zwart ziet",
-    betekenis: "Iemand bekritiseert een ander voor een fout die hijzelf ook heeft.",
-    oorsprong: "Kookgerei boven een open haardvuur werd allebei zwart beroet. De pot die de ketel dit verwijt, is zelf al even zwart."
+    tekst: "Met de gebakken peren zitten",
+    betekenis: "Opgezadeld zitten met de nadelige gevolgen van iets.",
+    oorsprong: "Vermoedelijk terug te voeren op een verhaal waarin iemand oneerlijk het mindere deel — de al gebakken, minder verse peren — toebedeeld krijgt."
   },
   {
-    tekst: "Iets met een korreltje zout nemen",
-    betekenis: "Iets niet helemaal serieus of letterlijk nemen.",
-    oorsprong: "Zout maakte voedsel vroeger beter verteerbaar. Iets 'met een korreltje zout nemen' betekende het verhaal makkelijker doorslikken door het niet te letterlijk op te vatten."
+    tekst: "Iemand bij de neus nemen",
+    betekenis: "Iemand voor de gek houden.",
+    oorsprong: "Verwijst naar dieren die vroeger met een ring of touw door de neus werden geleid en zo overal naartoe gestuurd konden worden."
   },
   {
-    tekst: "Een dubbeltje op zijn kant",
-    betekenis: "Een zeer onzekere situatie die nog alle kanten op kan.",
-    oorsprong: "Een oude Nederlandse munt die op zijn rand blijft staan in plaats van om te vallen: een zeldzame en wankele balans."
+    tekst: "De plaat poetsen",
+    betekenis: "Er stiekem vandoor gaan.",
+    oorsprong: "Vermoedelijk uit het Bargoens (dieventaal), waar 'plaat' de voetzool aanduidde en 'poetsen' snel wegglippen betekende."
   },
   {
-    tekst: "Iemand het vuur aan de schenen leggen",
-    betekenis: "Iemand onder grote druk zetten om iets te bekennen of te doen.",
-    oorsprong: "Zou teruggaan op een middeleeuwse martelpraktijk waarbij een verdachte met de voeten dicht bij het vuur werd gehouden om een bekentenis af te dwingen."
+    tekst: "Iemand op zijn nummer zetten",
+    betekenis: "Iemand terechtwijzen, op zijn plaats zetten.",
+    oorsprong: "Onduidelijke herkomst; mogelijk een verwijzing naar het toewijzen van een rang of plek in een hiërarchie."
   },
   {
-    tekst: "Met de deur in huis vallen",
-    betekenis: "Meteen ter zake komen, zonder inleiding.",
-    oorsprong: "Het beeld van iemand die zo haastig binnenkomt dat hij bijna letterlijk over de drempel struikelt, zonder tijd voor een beleefd welkom."
+    tekst: "Voor Piet Snot spelen",
+    betekenis: "Een onbeduidende, weinig serieuze rol vervullen.",
+    oorsprong: "'Piet Snot' was een theaterpersonage dat weinig indruk maakte en vooral voor de grap fungeerde."
   },
   {
-    tekst: "De handdoek in de ring gooien",
-    betekenis: "Opgeven, jezelf gewonnen verklaren.",
-    oorsprong: "Uit het boksen: de coach gooit een handdoek de ring in om de wedstrijd te stoppen wanneer zijn bokser niet meer verder kan."
+    tekst: "Op grote voet leven",
+    betekenis: "Luxueus leven, boven zijn stand.",
+    oorsprong: "In de middeleeuwse mode gold de lengte van de schoenpunt als teken van rijkdom en status."
   },
   {
-    tekst: "Iets voor een appel en een ei kopen",
-    betekenis: "Iets voor een zeer lage prijs kopen.",
-    oorsprong: "Appels en eieren waren vroeger zulke alledaagse, goedkope waar dat ze symbool stonden voor een verwaarloosbaar bedrag."
+    tekst: "Iets uit de losse pols doen",
+    betekenis: "Iets moeiteloos en zonder veel voorbereiding doen.",
+    oorsprong: "Verwijst naar tekenen of schrijven zonder de hand op tafel te steunen, enkel losjes bewegend vanuit de pols."
   },
   {
-    tekst: "Zo klaar als een klontje",
-    betekenis: "Volkomen duidelijk.",
-    oorsprong: "Verwijst naar een suikerklontje: zuiver en overzichtelijk van vorm — 'klaar' in de oude betekenis van 'helder'."
+    tekst: "Iemand de kastanjes uit het vuur laten halen",
+    betekenis: "Iemand het gevaarlijke werk laten doen terwijl een ander profiteert.",
+    oorsprong: "Gebaseerd op de fabel van de aap die de kat gebruikt om kastanjes uit het vuur te halen, waarna de aap zelf de buit opeet."
   },
   {
-    tekst: "De kogel is door de kerk",
-    betekenis: "Er is eindelijk een knoop doorgehakt.",
-    oorsprong: "Zou teruggaan op een (vermeend) historisch voorval waarbij een kogel daadwerkelijk door een kerkgebouw vloog — het moment waarop een lang aanslepende kwestie plotseling beslecht werd."
+    tekst: "Het achterste van zijn tong laten zien",
+    betekenis: "Eindelijk je ware bedoelingen onthullen.",
+    oorsprong: "Beeld van iemand die tot dan toe voorzichtig sprak en nu pas alles zegt wat hij werkelijk denkt."
   },
   {
-    tekst: "Iemand een oor aannaaien",
-    betekenis: "Iemand bedriegen of iets wijsmaken.",
-    oorsprong: "Mogelijk een verwijzing naar het merken van vee door een inkeping in het oor: een teken dat iemand 'gemerkt', oftewel bedrogen is."
+    tekst: "De koe bij de horens vatten",
+    betekenis: "Een probleem direct en vastberaden aanpakken.",
+    oorsprong: "Verwijst naar het letterlijk vastpakken van een koe bij de horens om haar onder controle te krijgen, in plaats van eromheen te lopen."
   },
   {
-    tekst: "Op zijn elf-en-dertigst",
-    betekenis: "Overdreven bedachtzaam, traag en nauwgezet te werk gaan.",
-    oorsprong: "De precieze herkomst is onzeker; het getal 'elf-en-dertig' wordt gezien als beeld van overdreven nauwkeurig tellen of afwegen."
+    tekst: "Iets in de doofpot stoppen",
+    betekenis: "Iets bewust verzwijgen.",
+    oorsprong: "Een doofpot was een pot waarin gloeiende kooltjes gedoofd werden door hem af te sluiten — de zaak werd zo onzichtbaar gemaakt."
   },
   {
-    tekst: "Iets achter de ellebogen hebben",
-    betekenis: "Sluw of niet helemaal te vertrouwen zijn.",
-    oorsprong: "Wie iets achter zijn ellebogen verbergt, houdt het buiten het zicht van de ander — een beeld voor heimelijk bedrog."
+    tekst: "Voor galg en rad opgroeien",
+    betekenis: "Een verwaarloosde opvoeding hebben die richting een slecht levenseinde lijkt te gaan.",
+    oorsprong: "Galg en rad waren middeleeuwse werktuigen voor de doodstraf; wie 'ervoor opgroeide' leek voorbestemd voor zo'n einde."
   },
   {
-    tekst: "De hand op de knip houden",
-    betekenis: "Zuinig zijn, niet snel geld uitgeven.",
-    oorsprong: "Een 'knip' was vroeger een portemonnee met een metalen sluiting. Wie de hand erop hield, opende hem niet snel."
+    tekst: "Iets op de lange baan schuiven",
+    betekenis: "Iets uitstellen.",
+    oorsprong: "De 'lange baan' was een kist op de griffie waarin minder dringende rechtszaken werden bewaard, tegenover de korte baan voor spoedzaken."
   },
   {
-    tekst: "Iemand in de wielen rijden",
-    betekenis: "Iemands plannen dwarsbomen of tegenwerken.",
-    oorsprong: "Afgeleid van het letterlijk in de wielen van een rijtuig of fiets rijden, waardoor het voertuig tot stilstand komt."
+    tekst: "Uit de school klappen",
+    betekenis: "Geheimen doorvertellen die niet voor buitenstaanders bedoeld waren.",
+    oorsprong: "Leerlingen die na schooltijd alsnog dingen doorvertelden die binnen de schoolmuren waren gezegd."
   },
   {
-    tekst: "Onder één hoedje spelen",
-    betekenis: "In het geheim samenwerken, vaak met een oneerlijke bedoeling.",
-    oorsprong: "Verwijst naar goochelaars die met een balletje onder een hoedje verborgen trucs uithalen om het publiek te misleiden."
+    tekst: "Het hoge woord eruit hebben",
+    betekenis: "Eindelijk zeggen wat je al langer probeerde te vermijden.",
+    oorsprong: "'Het hoge woord' verwijst naar iets dat moeilijk over de lippen komt vanwege het gewicht dat eraan hangt."
   },
   {
-    tekst: "Van de hak op de tak springen",
-    betekenis: "Zonder duidelijke lijn van het ene onderwerp naar het andere overgaan.",
-    oorsprong: "Het beeld van een dier dat van de ene houten balk (hak) naar de andere tak springt, zonder vaste route."
+    tekst: "Iemand aan het lijntje houden",
+    betekenis: "Iemand laten wachten zonder duidelijkheid te geven.",
+    oorsprong: "Beeld van een vis die aan de hengellijn wordt gehouden: nog niet binnengehaald, maar ook niet losgelaten."
   },
   {
-    tekst: "Iets in de wind slaan",
-    betekenis: "Een waarschuwing of advies negeren.",
-    oorsprong: "Vergelijkbaar met iets waardeloos weggooien, dat de wind zomaar meeneemt en doet verdwijnen."
+    tekst: "De hort op gaan",
+    betekenis: "Erop uit trekken, plezier gaan maken.",
+    oorsprong: "'Hort' verwees vroeger naar een weiland of buitengebied waar jongeren gingen rondtrekken."
   },
   {
-    tekst: "Een oogje in het zeil houden",
-    betekenis: "Opletten, iets goed in de gaten houden.",
-    oorsprong: "Uit de scheepvaart: de bemanning hield de zeilen nauwlettend in de gaten om tijdig te kunnen bijsturen bij veranderend weer."
+    tekst: "Zich als een kat in het nauw gedreven voelen",
+    betekenis: "Je wanhopig en klem voelen zitten.",
+    oorsprong: "Een kat die in het nauw wordt gedreven, verdedigt zich fel en onvoorspelbaar uit pure noodzaak."
   },
   {
-    tekst: "Op de blaren zitten",
-    betekenis: "De nadelige gevolgen van je eigen daden ondervinden.",
-    oorsprong: "Verwijst naar iemand die zo lang heeft rondgelopen dat hij letterlijk blaren op de voeten heeft overgehouden."
+    tekst: "Iemand een hak zetten",
+    betekenis: "Iemand dwarsbomen of benadelen.",
+    oorsprong: "Uit het schermen of worstelen, waarbij een 'hak' (beentje) werd gebruikt om een tegenstander te doen struikelen."
   },
   {
-    tekst: "Peperduur",
-    betekenis: "Extreem duur.",
-    oorsprong: "Peper was in de middeleeuwen een kostbaar importproduct uit Azië, verhandeld voor hoge prijzen — synoniem voor onbetaalbaar."
+    tekst: "Iets voor zoete koek slikken",
+    betekenis: "Iets zonder kritische blik geloven.",
+    oorsprong: "Zoete koek was makkelijk en zonder tegenzin te eten, in tegenstelling tot iets bitters dat weerstand oproept."
   },
   {
-    tekst: "Iets op zijn beloop laten",
-    betekenis: "Iets niet actief sturen, de natuurlijke gang van zaken laten gebeuren.",
-    oorsprong: "'Beloop' verwijst naar de loop van een rivier, die je z'n natuurlijke weg laat volgen zonder in te grijpen."
+    tekst: "Op een houtje bijten",
+    betekenis: "Het met erg weinig moeten stellen.",
+    oorsprong: "Verwijst naar het bijten op een stuk hout om honger of pijn te verdragen bij gebrek aan eten."
   },
   {
-    tekst: "Voor spek en bonen meedoen",
-    betekenis: "Meedoen zonder dat je bijdrage er echt toe doet.",
-    oorsprong: "Bij kaartspellen werd soms 'voor spek en bonen' gespeeld: zonder inzet, puur voor de lol, zodat er niets op het spel stond."
+    tekst: "Achter het net vissen",
+    betekenis: "Iets net mislopen, te laat zijn.",
+    oorsprong: "Een visser die aankomt net nadat het net al is opgehaald, vangt niets meer."
   },
   {
-    tekst: "De spijker op de kop slaan",
-    betekenis: "Precies de kern van de zaak raken.",
-    oorsprong: "Uit het timmervak: wie een spijker recht op de kop raakt, slaat hem in één keer goed in, zonder te verbuigen."
+    tekst: "Iemand een loer draaien",
+    betekenis: "Iemand een gemene streek leveren.",
+    oorsprong: "'Loer' verwees naar een list of hinderlaag bij de jacht, waarbij een dier in de val werd gelokt."
   },
   {
-    tekst: "Van katoen geven",
-    betekenis: "Er stevig tegenaan gaan, hard je best doen.",
-    oorsprong: "Mogelijk uit de textielindustrie, waar katoen met kracht bewerkt of geklopt moest worden voordat het verwerkt kon worden."
+    tekst: "Zich geen raad weten",
+    betekenis: "Niet meer weten wat te doen.",
+    oorsprong: "'Raad' in de oude betekenis van advies of oplossing; wie zich geen raad weet, vindt geen enkele uitweg meer."
   },
   {
-    tekst: "Achter de geraniums zitten",
-    betekenis: "Weinig actief zijn en veel thuis blijven, vaak gezegd over ouderen.",
-    oorsprong: "Het beeld van iemand die de hele dag voor het raam zit, achter de geraniums op de vensterbank, uitkijkend naar buiten."
+    tekst: "In het gevlei komen bij iemand",
+    betekenis: "Iemands gunst winnen.",
+    oorsprong: "Mogelijk gerelateerd aan 'vleien'; je komt letterlijk in de nabijheid van iemand door zachtaardig, innemend gedrag."
   },
   {
-    tekst: "Zijn hand niet omdraaien voor iets",
-    betekenis: "Iets moeiteloos en zonder aarzeling doen.",
-    oorsprong: "Het simpele gebaar van een hand omdraaien staat symbool voor een minimale inspanning, iets waar je niet eens bij na hoeft te denken."
+    tekst: "De lakens uitdelen",
+    betekenis: "De baas zijn, het voor het zeggen hebben.",
+    oorsprong: "In een huishouden was het verdelen van beddengoed een taak van de heer of vrouwe des huizes, als teken van gezag."
   },
   {
-    tekst: "Iemand een poepje laten ruiken",
-    betekenis: "Iemand laten zien wat je waard bent, vaak nadat je onderschat werd.",
-    oorsprong: "De precieze herkomst is onzeker, maar het beeld van iets 'laten ruiken' verwijst naar iemands aanwezigheid of kunnen nadrukkelijk laten voelen."
+    tekst: "Iets met de haren erbij slepen",
+    betekenis: "Iets kunstmatig en ongepast in een verhaal betrekken.",
+    oorsprong: "Beeld van iets dat niet vanzelf past en letterlijk 'aan de haren' erbij getrokken moet worden."
   },
   {
-    tekst: "Water bij de wijn doen",
-    betekenis: "Concessies doen, gematigder worden in je eisen.",
-    oorsprong: "Verwijst naar de oude gewoonte om sterke wijn met water te verdunnen, waardoor die minder krachtig en makkelijker te verteren werd."
+    tekst: "Op apengapen staan",
+    betekenis: "Wijd openstaan, verbaasd kijken.",
+    oorsprong: "Apen die hun mond wijd opensperren bij verbazing of dreiging dienden als beeld voor stomverbaasd kijken."
   },
   {
-    tekst: "De schaapjes op het droge hebben",
-    betekenis: "Financieel onafhankelijk zijn, voor de rest van je leven verzekerd zijn.",
-    oorsprong: "Schapen die veilig op het droge staan lopen geen gevaar meer om te verdrinken of weggespoeld te worden — een beeld voor veiligheid en zekerheid."
+    tekst: "Iemand voor het blok zetten",
+    betekenis: "Iemand dwingen meteen een beslissing te nemen.",
+    oorsprong: "Verwijst naar het hakblok, waar iemand voor gezet werd zonder ontsnappingsmogelijkheid — een definitief moment."
+  },
+  {
+    tekst: "Iemand naar de mond praten",
+    betekenis: "Iemand vleien om in de gunst te komen.",
+    oorsprong: "Letterlijk praten in de richting van iemands mond: precies zeggen wat die persoon graag wil horen."
+  },
+  {
+    tekst: "Een storm in een glas water",
+    betekenis: "Veel ophef over iets onbelangrijks.",
+    oorsprong: "Beeld van een storm die onmogelijk groter kan zijn dan de rand van het glas waarin hij zogenaamd woedt."
+  },
+  {
+    tekst: "Het ijzer smeden als het heet is",
+    betekenis: "Een gunstige gelegenheid direct benutten.",
+    oorsprong: "Uit het smeedvak: ijzer is alleen te bewerken zolang het gloeiend heet is, eenmaal afgekoeld lukt dat niet meer."
+  },
+  {
+    tekst: "Iemand in de gaten houden",
+    betekenis: "Iemand goed observeren.",
+    oorsprong: "'Gaten' verwijst hier naar de ogen — iemand letterlijk nauwlettend in het vizier houden."
+  },
+  {
+    tekst: "Op zijn tellen passen",
+    betekenis: "Voorzichtig zijn, goed opletten.",
+    oorsprong: "Bij het tellen van geld of stappen moest vroeger precies worden opgelet om geen fout te maken."
+  },
+  {
+    tekst: "Alle registers opentrekken",
+    betekenis: "Alle beschikbare middelen inzetten, alles op alles zetten.",
+    oorsprong: "Uit de orgelbouw: het opentrekken van alle registers laat het instrument voluit en krachtig klinken."
+  },
+  {
+    tekst: "Iemand het bloed onder de nagels vandaan halen",
+    betekenis: "Iemand mateloos irriteren.",
+    oorsprong: "Beeld van een ergernis die zo intens is dat die zelfs doordringt tot onder de nagels, een plek die moeilijk te bereiken is."
+  },
+  {
+    tekst: "De beste stuurlui staan aan wal",
+    betekenis: "Wie zelf niets doet, bekritiseert het gemakkelijkst.",
+    oorsprong: "Verwijst naar mensen aan land die commentaar geven op een schip op zee, zonder zelf ooit het roer te hebben vastgehouden."
+  },
+  {
+    tekst: "Iemand een hart onder de riem steken",
+    betekenis: "Iemand bemoedigen.",
+    oorsprong: "Soldaten droegen hun uitrusting aan een riem; iets 'onder de riem steken' gaf hen extra moed voor de strijd."
+  },
+  {
+    tekst: "Iemand op de vingers kijken",
+    betekenis: "Iemand nauwlettend controleren.",
+    oorsprong: "Verwijst naar leermeesters die letterlijk toekeken op de handbewegingen van een leerling bij precisiewerk."
+  },
+  {
+    tekst: "Zich in de nesten werken",
+    betekenis: "Zichzelf in de problemen brengen.",
+    oorsprong: "Beeld van een dier dat verstrikt raakt in de wirwar van takken en materiaal van een nest."
+  },
+  {
+    tekst: "Iemand voor lul zetten",
+    betekenis: "Iemand belachelijk maken.",
+    oorsprong: "'Lul' had oorspronkelijk de bredere, minder grove betekenis van 'sufferd' — iemand zo neerzetten maakte hem bespottelijk."
+  },
+  {
+    tekst: "Iets tussen neus en lippen door zeggen",
+    betekenis: "Iets terloops en achteloos vermelden.",
+    oorsprong: "Beeld van iets dat je bijna toevallig uitspreekt, zoals lucht die tussen neus en lippen ontsnapt."
+  },
+  {
+    tekst: "De koek is op",
+    betekenis: "De goede tijden of het geduld zijn voorbij.",
+    oorsprong: "Koek als symbool voor iets lekkers en beperkts: is de koek op, dan is er niets aangenaams meer over."
+  },
+  {
+    tekst: "Iemand iets door de strot duwen",
+    betekenis: "Iemand iets opdringen tegen zijn wil.",
+    oorsprong: "Beeld van letterlijk voedsel met kracht door iemands keel duwen, ongeacht of die persoon het wil."
+  },
+  {
+    tekst: "Uit de kunst zijn",
+    betekenis: "Uitstekend, subliem zijn.",
+    oorsprong: "'Kunst' verwees vroeger naar vakmanschap; iets 'uit de kunst' overtreft het vakmanschap zelf in kwaliteit."
+  },
+  {
+    tekst: "Er met de Franse slag doorheen gaan",
+    betekenis: "Iets vluchtig en oppervlakkig uitvoeren.",
+    oorsprong: "'Franse slag' verwees mogelijk naar een snelle, weinig zorgvuldige stijl die als typisch Frans werd gezien."
+  },
+  {
+    tekst: "Iemand op het matje roepen",
+    betekenis: "Iemand streng terechtwijzen.",
+    oorsprong: "Wie bij de baas of leraar geroepen werd, moest op een (deur)matje voor het bureau gaan staan om een berisping te krijgen."
+  },
+  {
+    tekst: "Zijn borst natmaken",
+    betekenis: "Zich voorbereiden op iets onaangenaams.",
+    oorsprong: "Verwijst naar zwemmers die hun borst nat maken voor ze het koude water in gaan — de eerste onaangename stap."
+  },
+  {
+    tekst: "De poppen aan het dansen krijgen",
+    betekenis: "Voor onrust of problemen zorgen.",
+    oorsprong: "Beeld uit het poppenkasttheater, waar de poppen pas 'gaan dansen' als de poppenspeler ze chaotisch in actie brengt."
+  },
+  {
+    tekst: "Zich er met een jantje-van-leiden van afmaken",
+    betekenis: "Iets slordig en zonder inzet afhandelen.",
+    oorsprong: "'Jantje van Leiden' zou een wat onhandige of onverschillige historische figuur zijn geweest wiens naam synoniem werd met halfslachtig werk."
+  },
+  {
+    tekst: "Iets voor een habbekrats kopen",
+    betekenis: "Iets voor een belachelijk lage prijs kopen.",
+    oorsprong: "'Habbekrats' is mogelijk een verbastering van een Jiddische of Duitse term voor een schijntje geld."
+  },
+  {
+    tekst: "Er het zwijgen toe doen",
+    betekenis: "Bewust niets zeggen over iets.",
+    oorsprong: "'Het zwijgen' wordt hier als actieve daad benadrukt: een bewuste keuze om stil te blijven, geen toevallige stilte."
+  },
+  {
+    tekst: "In zak en as zitten",
+    betekenis: "Erg bedroefd of wanhopig zijn.",
+    oorsprong: "Bijbelse rouwrite waarbij mensen zich in een zak (grof gewaad) hulden en zich met as bestrooiden als teken van rouw."
+  },
+  {
+    tekst: "Iemand naar de kroon steken",
+    betekenis: "Iemand proberen te overtreffen.",
+    oorsprong: "Verwijst naar het letterlijk reiken naar de kroon van een koning, als teken van rivaliteit om de hoogste positie."
+  },
+  {
+    tekst: "Het onderspit delven",
+    betekenis: "Verliezen, het afleggen tegen een ander.",
+    oorsprong: "'Spit' verwijst naar omgespit land bij een gevecht; wie 'onder' kwam te liggen, verloor letterlijk het gevecht op de grond."
+  },
+  {
+    tekst: "Iemand op de huid zitten",
+    betekenis: "Iemand voortdurend achtervolgen of onder druk zetten.",
+    oorsprong: "Jachthonden die een prooi zo dicht op de huid zitten dat ontsnappen onmogelijk wordt."
+  },
+  {
+    tekst: "Ergens de vinger op leggen",
+    betekenis: "Precies aanwijzen wat er aan de hand is.",
+    oorsprong: "Het gebaar van een vinger op een specifieke plek leggen om iets exact aan te duiden, zoals op een kaart of document."
+  },
+  {
+    tekst: "Zijn biezen pakken",
+    betekenis: "Vertrekken, opstappen.",
+    oorsprong: "'Biezen' waren de rieten matten waarop mensen vroeger sliepen; bij vertrek rolde je je biesmatras op en nam je die mee."
+  },
+  {
+    tekst: "In de wolken zijn",
+    betekenis: "Erg blij zijn.",
+    oorsprong: "Beeld van iemand die zo gelukkig is dat hij zich als het ware hoog boven de aarde, tussen de wolken, bevindt."
+  },
+  {
+    tekst: "Iemand het licht in de ogen niet gunnen",
+    betekenis: "Extreem jaloers zijn op iemand.",
+    oorsprong: "Een jaloezie zo groot dat je iemand zelfs het simpele feit van kunnen zien niet meer zou gunnen."
+  },
+  {
+    tekst: "Iemand een poot uitdraaien",
+    betekenis: "Iemand fors uitbuiten of bedriegen.",
+    oorsprong: "Beeld van een dier waarvan letterlijk een poot wordt uitgedraaid — een teken van meedogenloze uitbuiting."
+  },
+  {
+    tekst: "Van de os op de ezel springen",
+    betekenis: "Abrupt van het ene onderwerp naar het andere overgaan.",
+    oorsprong: "Middeleeuws beeld van iemand die zonder duidelijke reden wisselt tussen een groter dier (os) en een kleiner dier (ezel)."
+  },
+  {
+    tekst: "Zich niet laten kennen",
+    betekenis: "Laten zien dat je tegen iets bestand bent, je niet laten doen.",
+    oorsprong: "Beeld van iemand die weigert zijn ware, kwetsbare gevoelens te tonen tegenover tegenslag."
+  },
+  {
+    tekst: "Het gelag betalen",
+    betekenis: "Opdraaien voor de gevolgen, vaak van andermans daden.",
+    oorsprong: "In herbergen moest uiteindelijk iemand de rekening ('gelag') betalen voor de gezamenlijke consumpties."
+  },
+  {
+    tekst: "Iemand op de kast jagen",
+    betekenis: "Iemand flink irriteren.",
+    oorsprong: "Een kat die 'op de kast' gejaagd wordt, klimt in het nauw gedreven naar een hoog punt — beeld voor iemand tot het uiterste drijven."
+  },
+  {
+    tekst: "De puntjes op de i zetten",
+    betekenis: "Iets tot in de perfectie afwerken.",
+    oorsprong: "Verwijst naar het kalligraferen, waarbij de puntjes boven de letter i als laatste, verfijnende toets werden gezet."
+  },
+  {
+    tekst: "Iets door de mangel halen",
+    betekenis: "Iets grondig en streng doornemen of bekritiseren.",
+    oorsprong: "Een mangel was een wasrol die kleding met kracht plette; iets 'door de mangel halen' betekende een harde, grondige behandeling."
+  },
+  {
+    tekst: "Zich in allerlei bochten wringen",
+    betekenis: "Grote moeite doen om iets te bereiken of te verantwoorden.",
+    oorsprong: "Beeld van een lichaam dat zich onnatuurlijk moet verdraaien om ergens doorheen of uit te komen."
+  },
+  {
+    tekst: "Iets voor lief nemen",
+    betekenis: "Iets accepteren zonder er moeilijk over te doen.",
+    oorsprong: "'Lief' in de oude betekenis van aangenaam of welgevallig; iets voor lief nemen betekende het gewillig aanvaarden."
+  },
+  {
+    tekst: "De koorden in handen hebben",
+    betekenis: "De controle hebben, alles regisseren.",
+    oorsprong: "Verwijst naar poppenspelers die de touwtjes van marionetten vasthouden en zo elke beweging bepalen."
+  },
+  {
+    tekst: "Iemand met de mond vol tanden laten staan",
+    betekenis: "Iemand met stomheid slaan, geen weerwoord laten hebben.",
+    oorsprong: "Beeld van iemand die zo verrast is dat zijn mond letterlijk 'vol tanden' blijft, zonder woorden te kunnen vormen."
+  },
+  {
+    tekst: "Van een koude kermis thuiskomen",
+    betekenis: "Tegenvallen, teleurgesteld terugkeren.",
+    oorsprong: "Kermissen waren vroeger warme, drukke volksfeesten; wie van een tegenvallende kermis thuiskwam, had een deceptie beleefd."
+  },
+  {
+    tekst: "Zijn kruit verschoten hebben",
+    betekenis: "Geen kracht of middelen meer over hebben.",
+    oorsprong: "Uit de wapenkunde: een soldaat zonder buskruit (munitie) kon niet meer vechten."
+  },
+  {
+    tekst: "Voor de bijl gaan",
+    betekenis: "Het slachtoffer worden, eraan gaan.",
+    oorsprong: "Verwijst naar een boom die letterlijk voor de bijl gaat, oftewel geveld wordt zonder kans op ontsnapping."
+  },
+  {
+    tekst: "Het gordijn valt",
+    betekenis: "Iets is definitief afgelopen.",
+    oorsprong: "Uit het theater, waar het vallen van het gordijn het einde van een voorstelling markeert."
+  },
+  {
+    tekst: "Bij de pinken zijn",
+    betekenis: "Alert en scherp zijn.",
+    oorsprong: "Onduidelijke herkomst; mogelijk gerelateerd aan het scherp moeten waarnemen van jonge koeien (pinken) tussen de kudde."
+  },
+  {
+    tekst: "Iemand een loefje afsteken",
+    betekenis: "Iemand net iets te slim af zijn.",
+    oorsprong: "Uit de scheepvaart: een schip dat 'de loef' (windzijde) van een ander schip afsteekt, ontneemt dat schip de wind en vaart sneller."
+  },
+  {
+    tekst: "Zich geen buil vallen aan iets",
+    betekenis: "Ergens geen nadelige gevolgen van ondervinden.",
+    oorsprong: "Een 'buil' is een bult van een val; als je 'geen buil valt', loop je geen schade op, letterlijk noch figuurlijk."
+  },
+  {
+    tekst: "Het paard achter de wagen spannen",
+    betekenis: "Iets in de verkeerde volgorde aanpakken.",
+    oorsprong: "Een paard hoort vóór de wagen te lopen om die te trekken; wie het paard erachter spant, keert de logische volgorde om."
+  },
+  {
+    tekst: "Iets uit het hoofd praten",
+    betekenis: "Iemand overtuigen iets niet te doen.",
+    oorsprong: "Beeld van een idee dat letterlijk uit iemands gedachten verwijderd wordt door overtuigingskracht."
+  },
+  {
+    tekst: "Iemand iets betaald zetten",
+    betekenis: "Wraak nemen voor iets.",
+    oorsprong: "Beeld van een schuld die letterlijk 'betaald' moet worden, hier toegepast op figuurlijke wraak of vergelding."
+  },
+  {
+    tekst: "Alsof zijn neus bloedt",
+    betekenis: "Alsof er niets aan de hand is, onaangedaan.",
+    oorsprong: "Iemand met een bloedende neus die zich toch niet laat afleiden en gewoon doorgaat, als teken van onverstoorbaarheid."
+  },
+  {
+    tekst: "Een appeltje voor de dorst bewaren",
+    betekenis: "Iets achter de hand houden voor moeilijkere tijden.",
+    oorsprong: "Appels werden vroeger bewaard voor de wintermaanden, als voorzorg voor tijden van schaarste."
+  },
+  {
+    tekst: "Iemand zand in de ogen strooien",
+    betekenis: "Iemand misleiden, de waarheid verbergen.",
+    oorsprong: "Beeld van letterlijk zand in iemands ogen gooien zodat die tijdelijk niets meer kan zien."
+  },
+  {
+    tekst: "Zijn hielen laten zien",
+    betekenis: "Snel vluchten of vertrekken.",
+    oorsprong: "Wie wegrent, laat de achterkant van zijn voeten (hielen) zien aan wie achterblijft."
+  },
+  {
+    tekst: "Iemand de wind uit de zeilen nemen",
+    betekenis: "Iemands enthousiasme of kracht wegnemen.",
+    oorsprong: "Uit de zeilvaart: een schip dat de wind wegneemt van een ander schip, maakt varen voor dat schip onmogelijk."
+  },
+  {
+    tekst: "Zich de haren uit het hoofd trekken",
+    betekenis: "Wanhopig zijn over een fout of gemiste kans.",
+    oorsprong: "Overdreven fysiek gebaar van wanhoop, waarbij iemand zich letterlijk aan zijn haren zou trekken van frustratie."
+  },
+  {
+    tekst: "Het bijltje erbij neerleggen",
+    betekenis: "Ergens mee stoppen, opgeven.",
+    oorsprong: "Een houthakker die zijn bijl neerlegt, stopt met werken; het beeld werd overgenomen voor het opgeven van een taak."
+  },
+  {
+    tekst: "Iemand de duimschroeven aandraaien",
+    betekenis: "Iemand onder zware druk zetten.",
+    oorsprong: "Verwijst naar een historisch martelwerktuig waarmee de duimen werden samengeknepen om een bekentenis af te dwingen."
+  },
+  {
+    tekst: "Op eieren lopen",
+    betekenis: "Heel voorzichtig te werk gaan in een gevoelige situatie.",
+    oorsprong: "Beeld van iemand die letterlijk over eieren loopt en met elke stap moet oppassen ze niet te breken."
+  },
+  {
+    tekst: "Zijn mond voorbijpraten",
+    betekenis: "Per ongeluk iets verklappen.",
+    oorsprong: "Beeld van woorden die sneller uit de mond komen dan het verstand ze kan tegenhouden."
+  },
+  {
+    tekst: "Iemand een blauwtje laten lopen",
+    betekenis: "Iemands liefde of avances afwijzen.",
+    oorsprong: "Mogelijk gerelateerd aan de kleur blauw als symbool voor teleurstelling of afwijzing in oude kledingsymboliek."
+  },
+  {
+    tekst: "Ergens geen gras over laten groeien",
+    betekenis: "Iets snel en zonder uitstel aanpakken.",
+    oorsprong: "Beeld van een pad dat pas overwoekerd raakt met gras als er lange tijd niemand overheen loopt — hier blijft dat uit."
+  },
+  {
+    tekst: "Iemand op zijn donder geven",
+    betekenis: "Iemand flink terechtwijzen of straffen.",
+    oorsprong: "'Donder' verwijst hier waarschijnlijk naar het achterste; iemand 'op zijn donder geven' had oorspronkelijk een letterlijke, fysieke betekenis."
+  },
+  {
+    tekst: "Zo goed als goud zijn",
+    betekenis: "Heel betrouwbaar of waardevol zijn.",
+    oorsprong: "Goud gold van oudsher als de meest stabiele en betrouwbare waardemaat, vandaar de vergelijking voor betrouwbaarheid."
   },
 ];
