@@ -330,6 +330,53 @@ body {
 .copy-btn:active { background: rgba(46,74,61,.08); }
 .copy-btn.copied { border-color: var(--ochre); color: var(--ochre); }
 
+/* ---- Generator view ---- */
+.generator-view {
+  flex: 1;
+  background: var(--green-deep);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-bottom: 28px;
+}
+.generator-view .list-header {
+  background: var(--green-deep);
+}
+.generator-view .list-header h1,
+.generator-view .back-btn {
+  color: var(--paper);
+}
+.generator-scene {
+  padding: 8px 16px;
+  flex: none;
+}
+.generator-page {
+  padding-top: 44px;
+}
+.fictief-badge {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--ochre);
+  color: var(--paper);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  padding: 5px 12px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+.generator-note {
+  color: rgba(237,228,210,.7);
+  padding: 4px 24px 0;
+  text-align: center;
+}
+.generator-btn {
+  margin: 18px 20px 0;
+  width: auto;
+}
+
 /* ---- List view ---- */
 .list-view {
   flex: 1;

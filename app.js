@@ -30,6 +30,13 @@
     customSection: document.getElementById("customSection"),
     customList: document.getElementById("customList"),
     copyCodeBtn: document.getElementById("copyCodeBtn"),
+    openGenerator: document.getElementById("openGenerator"),
+    closeGenerator: document.getElementById("closeGenerator"),
+    generatorView: document.getElementById("generatorView"),
+    genSaying: document.getElementById("genSayingText"),
+    genBetekenis: document.getElementById("genBetekenisText"),
+    genOorsprong: document.getElementById("genOorsprongText"),
+    regenerateBtn: document.getElementById("regenerateBtn"),
   };
 
   function dayOfYear(d) {
@@ -224,6 +231,25 @@
       document.body.removeChild(ta);
     }
   });
+
+  // ---- Generator view ----
+  function runGenerator() {
+    const result = ZEGSWIJZE_GENERATOR.generate();
+    els.genSaying.textContent = "\u201C" + result.tekst + "\u201D";
+    els.genBetekenis.textContent = result.betekenis;
+    els.genOorsprong.textContent = result.oorsprong;
+  }
+
+  els.openGenerator.addEventListener("click", () => {
+    runGenerator();
+    els.generatorView.hidden = false;
+    els.pageView.hidden = true;
+  });
+  els.closeGenerator.addEventListener("click", () => {
+    els.generatorView.hidden = true;
+    els.pageView.hidden = false;
+  });
+  els.regenerateBtn.addEventListener("click", runGenerator);
 
   render();
 

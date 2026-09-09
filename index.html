@@ -71,6 +71,7 @@
 
     <button class="all-link" id="openList">Alle zegswijzen bekijken</button>
     <button class="all-link" id="openAdd">Zelf een zegswijze toevoegen</button>
+    <button class="all-link" id="openGenerator">✨ Bedenk een nieuwe zegswijze</button>
   </main>
 
   <!-- TOEVOEGEN -->
@@ -104,6 +105,47 @@
     </div>
   </section>
 
+  <!-- GENERATOR -->
+  <section class="generator-view" id="generatorView" hidden>
+    <header class="list-header">
+      <button class="back-btn" id="closeGenerator" aria-label="Terug">
+        <svg viewBox="0 0 24 24" width="20" height="20"><path d="M15 4L7 12l8 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <h1>Nieuw bedacht</h1>
+    </header>
+
+    <div class="scene generator-scene">
+      <div class="calendar-page generator-page" id="generatorPage">
+        <span class="fictief-badge">✨ Verzonnen, geen historische zegswijze</span>
+
+        <div class="saying-block">
+          <p class="saying" id="genSayingText">—</p>
+        </div>
+
+        <div class="detail-block">
+          <div class="detail">
+            <span class="detail-rule betekenis-rule"></span>
+            <div class="detail-copy">
+              <h2>Wat het zou kunnen betekenen</h2>
+              <p id="genBetekenisText">—</p>
+            </div>
+          </div>
+          <div class="detail">
+            <span class="detail-rule oorsprong-rule"></span>
+            <div class="detail-copy">
+              <h2>Bedachte oorsprong</h2>
+              <p id="genOorsprongText">—</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <p class="add-note generator-note">Deze zegswijze is zojuist bedacht door woorden en patronen uit de echte collectie te combineren — puur voor de lol, niet historisch gedocumenteerd.</p>
+
+    <button class="submit-btn generator-btn" id="regenerateBtn">Bedenk er nog een</button>
+  </section>
+
   <!-- LIJSTWEERGAVE -->
   <section class="list-view" id="listView" hidden>
     <header class="list-header">
@@ -123,6 +165,7 @@
 </footer>
 
 <script src="data.js"></script>
+<script src="generator.js"></script>
 <script src="app.js"></script>
 </body>
 </html>
