@@ -11,7 +11,6 @@
     oorsprong: document.getElementById("oorsprongText"),
     page: document.getElementById("calendarPage"),
     prevBtn: document.getElementById("prevBtn"),
-    nextBtn: document.getElementById("nextBtn"),
     todayBtn: document.getElementById("todayBtn"),
     shuffleBtn: document.getElementById("shuffleBtn"),
     openList: document.getElementById("openList"),
@@ -108,7 +107,6 @@
   }
 
   els.prevBtn.addEventListener("click", () => animateSwap(() => { shuffledIndex = null; offset -= 1; }));
-  els.nextBtn.addEventListener("click", () => animateSwap(() => { shuffledIndex = null; offset += 1; }));
   els.todayBtn.addEventListener("click", () => animateSwap(() => { shuffledIndex = null; offset = 0; }));
   els.shuffleBtn.addEventListener("click", () => animateSwap(() => {
     const list = allEntries();

@@ -1,10 +1,11 @@
-const CACHE_NAME = "zegswijzen-v2";
+const CACHE_NAME = "zegswijzen-v3";
 const ASSETS = [
   "./",
   "./index.html",
   "./style.css",
   "./app.js",
   "./data.js",
+  "./generator.js",
   "./manifest.json",
   "./icons/icon-192.png",
   "./icons/icon-512.png",
